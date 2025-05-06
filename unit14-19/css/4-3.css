@@ -19,3 +19,47 @@ html,body{
 	height: 100%;
   -webkit-overflow-scrolling: touch;  
 }
+
+/* ==================== */
+#app {
+	width: 1062px;
+	height: 5000px;
+	margin: 0 auto;
+	padding-top: 69px;
+}
+
+#app > header {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	margin-bottom: 48px;
+}
+
+#app > header > h1 {
+	display: block;
+	width: 119px;
+	height: auto;
+	overflow: hidden;
+	float: left;
+}
+
+#app > header > h1 > img {
+	width: 100%;
+	height: auto;	
+}
+
+#app > header > nav {
+	float: right;
+}
+
+#app > header > nav > a {
+	font-size: 14px;
+	float: left;
+	padding: 0px 30px;
+	color: #626262;
+	line-height: 23px;
+}
+
+#app > header > nav > a:last-child {
+	padding-right: 0px;
+}
