@@ -1,41 +1,56 @@
 @import url("reset.css");
+
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
-h1,h2,h3,h4,h5,h6,span,p,a,input,button,div{
-	font-family: "Microsoft JhengHei","Heiti TC","sans-serif";
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p,
+a,
+input,
+button,
+div {
+	font-family: "Microsoft JhengHei", "Heiti TC", "sans-serif";
 	text-decoration: none;
 }
 
-img{
+img {
 	display: block;
 }
 
-html,body{
+html,
+body {
 	width: 100%;
 	height: 100%;
-  -webkit-overflow-scrolling: touch;  
+	-webkit-overflow-scrolling: touch;
 }
 
 /* ==================== */
 #app {
 	width: 1062px;
-	height: 5000px;
+	height: auto;
+	overflow: hidden;
 	margin: 0 auto;
 	padding-top: 69px;
+	padding-bottom: 76px;
 }
 
-#app > header {
+#app>header {
 	width: 100%;
 	height: auto;
 	overflow: hidden;
 	margin-bottom: 48px;
 }
 
-#app > header > h1 {
+#app>header>h1 {
 	display: block;
 	width: 119px;
 	height: auto;
@@ -43,16 +58,16 @@ html,body{
 	float: left;
 }
 
-#app > header > h1 > img {
+#app>header>h1>img {
 	width: 100%;
-	height: auto;	
+	height: auto;
 }
 
-#app > header > nav {
+#app>header>nav {
 	float: right;
 }
 
-#app > header > nav > a {
+#app>header>nav>a {
 	font-size: 14px;
 	float: left;
 	padding: 0px 30px;
@@ -60,41 +75,41 @@ html,body{
 	line-height: 23px;
 }
 
-#app > header > nav > a:last-child {
+#app>header>nav>a:last-child {
 	padding-right: 0px;
 }
 
-#app > .banner {
+#app>.banner {
 	width: 100%;
 	height: auto;
 	overflow: hidden;
 	margin: 0 auto 98px auto;
 }
 
-#app > .banner > img {
+#app>.banner>img {
 	width: 100%;
 	height: auto;
 }
 
-#app > article.txt1 {
+#app>article.txt1 {
 	width: 100%;
 	height: auto;
 	overflow: hidden;
 	padding: 0 81px;
 }
 
-#app > article.txt1 > p {
+#app>article.txt1>p {
 	font-size: 14px;
 	color: #b4ad9e;
 }
 
-#app > article.txt1 > h2 {
+#app>article.txt1>h2 {
 	font-size: 30px;
 	color: #626262;
 	padding-top: 30px
 }
 
-#app > article.txt1 > h3 {
+#app>article.txt1>h3 {
 	font-size: 14px;
 	color: #626262;
 	line-height: 28px;
@@ -102,20 +117,20 @@ html,body{
 	padding-top: 38px;
 }
 
-#app > .pic {
+#app>.pic {
 	width: 899px;
 	height: auto;
 	overflow: hidden;
-	margin: 0 auto;	
+	margin: 0 auto;
 	margin-top: 57px;
 }
 
-#app > .pic > img {
+#app>.pic>img {
 	width: 100%;
 	height: auto;
 }
 
-#app > article.txt2 {
+#app>article.txt2 {
 	width: 100%;
 	height: auto;
 	overflow: hidden;
@@ -123,7 +138,7 @@ html,body{
 	margin-bottom: 117px;
 }
 
-#app > article.txt2 > p {
+#app>article.txt2>p {
 	font-size: 14px;
 	color: #626262;
 	font-style: oblique;
@@ -131,38 +146,38 @@ html,body{
 	padding: 57px 21px 37px 21px;
 }
 
-#app > article.txt2 > h3 {
+#app>article.txt2>h3 {
 	font-weight: 400;
 	color: #626262;
 	font-size: 14px;
 	line-height: 28px;
 }
 
-#app > .shareIcon {
+#app>.shareIcon {
 	width: 100%;
 	height: auto;
 	overflow: hidden;
 	padding-right: 81px;
 }
 
-#app > .shareIcon > .box {
+#app>.shareIcon>.box {
 	width: 216px;
 	height: auto;
-	overflow: hidden;	
+	overflow: hidden;
 	float: right;
 }
 
-#app > .shareIcon > .box > p {
+#app>.shareIcon>.box>p {
 	color: #b4ad9e;
 	font-size: 13px;
 	float: left;
 }
 
-#app > .shareIcon > .box > ul {
+#app>.shareIcon>.box>ul {
 	float: right;
 }
 
-#app > .shareIcon > .box > ul > li {
+#app>.shareIcon>.box>ul>li {
 	display: block;
 	width: 18px;
 	height: 18px;
@@ -170,7 +185,7 @@ html,body{
 	margin: 0 6px;
 }
 
-#app > .shareIcon > .box > ul > li > a {
+#app>.shareIcon>.box>ul>li>a {
 	display: block;
 	width: 100%;
 	height: 100%;
@@ -182,15 +197,142 @@ html,body{
 .fb {
 	background-image: url("../images/img/fb.png");
 }
+
 .tw {
 	background-image: url("../images/img/tw.png");
 }
+
 .google {
 	background-image: url("../images/img/g.png");
 }
+
 .tt {
 	background-image: url("../images/img/tumblr.png");
 }
+
 .pa {
 	background-image: url("../images/img/pinterest.png");
+}
+
+/* ============= */
+.photoBox {
+	width: 100%;
+	height: 435px;
+	background-color: #f5f5f5;
+	margin-bottom: 34px;
+}
+
+.photoBox>.photoMid {
+	width: 899px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.photoBox>.photoMid>h3 {
+	font-size: 14px;
+	color: #b4ad9e;
+	padding-top: 67px;
+}
+
+.photoBox>.photoMid>ul {
+	display: block;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	margin-top: 39px;
+}
+
+.photoBox>.photoMid>ul>li {
+	display: block;
+	/* width: 273px;  */
+	/* 用 273 / 899 = 0.3036... */
+	width: 30.4%;
+	height: auto;
+	overflow: hidden;
+	float: left;
+	/* 間距是 39px，一樣改用百分比的方式去算 39 / 899 = 0.043... */
+	margin-right: 4.3%;
+}
+
+.photoBox>.photoMid>ul>li:last-child {
+	margin-right: 0px;
+}
+
+.photoBox>.photoMid>ul>li>img {
+	width: 100%;
+	height: auto;
+}
+
+.photoBox>.photoMid>ul>li>h4 {
+	font-size: 20px;
+	color: #626262;
+	line-height: 61px;
+}
+
+/* ================= */
+footer {
+	width: 100%;
+	height: 97px;
+	background-color: #f5f5f5;
+}
+
+footer>section {
+	width: 899px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+footer>section>.text {
+	float: left;
+}
+
+footer>section>.text>a {
+	font-size: 14px;
+	color: black;
+	float: left;
+	line-height: 97px;
+	margin-right: 30px;
+}
+
+footer>section>.followIcon {
+	float: right;
+}
+
+footer>section>.followIcon>p {
+	line-height: 97px;
+	float: left;
+}
+
+footer>section>.followIcon>ul {
+	float: left;
+	margin-top: 41px;
+}
+
+footer>section>.followIcon>ul>li {
+	display: block;
+	width: 15px;
+	height: 15px;
+	float: left;
+	margin-left: 18px;
+}
+
+footer>section>.followIcon>ul>li>a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: auto 100%;
+}
+
+.f_fb {
+	background-image: url("../images/img/facebook.png");
+}
+
+.f_tw {
+	background-image: url("../images/img/twitter.png");
+}
+
+.f_ig {
+	background-image: url("../images/img/instagram.png");
 }
