@@ -63,3 +63,54 @@ html,body{
 #app > header > nav > a:last-child {
 	padding-right: 0px;
 }
+
+#app > .banner {
+	width: 1062px;
+	height: auto;
+	overflow: hidden;
+	margin: 0 auto 98px auto;
+}
+
+#app > .banner > img {
+	width: 100%;
+	height: auto;
+}
+
+#app > article {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	padding: 0 81px;
+}
+
+#app > article > p {
+	font-size: 14px;
+	color: #b4ad9e;
+}
+
+#app > article > h2 {
+	font-size: 30px;
+	color: #626262;
+	padding-top: 30px
+}
+
+#app > article > h3 {
+	font-size: 14px;
+	color: #626262;
+	line-height: 28px;
+	font-weight: 400;
+	padding-top: 38px;
+}
+
+#app > .pic {
+	width: 899px;
+	height: auto;
+	overflow: hidden;
+	margin: 0 auto;	
+	margin-top: 57px;
+}
+
+#app > .pic > img {
+	width: 100%;
+	height: auto;
+}
