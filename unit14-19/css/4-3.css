@@ -65,7 +65,7 @@ html,body{
 }
 
 #app > .banner {
-	width: 1062px;
+	width: 100%;
 	height: auto;
 	overflow: hidden;
 	margin: 0 auto 98px auto;
@@ -76,25 +76,25 @@ html,body{
 	height: auto;
 }
 
-#app > article {
+#app > article.txt1 {
 	width: 100%;
 	height: auto;
 	overflow: hidden;
 	padding: 0 81px;
 }
 
-#app > article > p {
+#app > article.txt1 > p {
 	font-size: 14px;
 	color: #b4ad9e;
 }
 
-#app > article > h2 {
+#app > article.txt1 > h2 {
 	font-size: 30px;
 	color: #626262;
 	padding-top: 30px
 }
 
-#app > article > h3 {
+#app > article.txt1 > h3 {
 	font-size: 14px;
 	color: #626262;
 	line-height: 28px;
@@ -113,4 +113,84 @@ html,body{
 #app > .pic > img {
 	width: 100%;
 	height: auto;
+}
+
+#app > article.txt2 {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	padding: 0 81px;
+	margin-bottom: 117px;
+}
+
+#app > article.txt2 > p {
+	font-size: 14px;
+	color: #626262;
+	font-style: oblique;
+	line-height: 28px;
+	padding: 57px 21px 37px 21px;
+}
+
+#app > article.txt2 > h3 {
+	font-weight: 400;
+	color: #626262;
+	font-size: 14px;
+	line-height: 28px;
+}
+
+#app > .shareIcon {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	padding-right: 81px;
+}
+
+#app > .shareIcon > .box {
+	width: 216px;
+	height: auto;
+	overflow: hidden;	
+	float: right;
+}
+
+#app > .shareIcon > .box > p {
+	color: #b4ad9e;
+	font-size: 13px;
+	float: left;
+}
+
+#app > .shareIcon > .box > ul {
+	float: right;
+}
+
+#app > .shareIcon > .box > ul > li {
+	display: block;
+	width: 18px;
+	height: 18px;
+	float: left;
+	margin: 0 6px;
+}
+
+#app > .shareIcon > .box > ul > li > a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: auto 100%;
+}
+
+.fb {
+	background-image: url("../images/img/fb.png");
+}
+.tw {
+	background-image: url("../images/img/tw.png");
+}
+.google {
+	background-image: url("../images/img/g.png");
+}
+.tt {
+	background-image: url("../images/img/tumblr.png");
+}
+.pa {
+	background-image: url("../images/img/pinterest.png");
 }
