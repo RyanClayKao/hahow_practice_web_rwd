@@ -54,9 +54,11 @@ header > nav > a:hover{
     height: 570px;
     margin-left: -584px; 
     margin-top: -285px; 
-    /*
-        css ...
-    */
     
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: space-between;
 }
 
