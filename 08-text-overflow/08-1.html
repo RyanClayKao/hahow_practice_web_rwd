@@ -52,19 +52,30 @@
 	.box > .content > h1{
 		color: #595b56;
 		font-size: 26px;
-
-		/*
-			css ...
-		*/
+		
+		overflow: hidden;
+		/* 不換行 */
+		white-space: nowrap;
+		/* 多出來的字改成省略號(...)顯示 */
+		text-overflow: ellipsis;
 
 	}
 	.box > .content > p{
 		color: #8f8e93;
 		font-size: 20px;
 		padding-top: 10px;
-		/*
-			css ...
-		*/
+		
+		overflow: hidden;
+		text-overflow: ellipsis;
+
+		/* 設定 box 模型 */
+		display: -webkit-box;
+		/* box 模型內容顯示方向 */
+		-webkit-box-orient: vertical;
+		
+		/* 顯示的行數 */
+		-webkit-line-clamp: 4;
+		line-clamp: 4;
 	}
 </style>
 
