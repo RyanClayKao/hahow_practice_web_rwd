@@ -15,9 +15,9 @@ html,body{
     height: 100%;
     padding-top: 10px;
 
-    /*
-        css...
-    */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .app{
@@ -28,9 +28,7 @@ html,body{
     background-position: center;
     background-repeat: no-repeat;
 
-    /*
-        css...
-    */
+    display: flex;
 
 }
 .app > div{
