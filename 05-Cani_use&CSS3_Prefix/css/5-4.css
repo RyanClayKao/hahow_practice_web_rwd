@@ -11,9 +11,13 @@ html,body{
 }
 /*///////////////////////////////////////////////////////////////////////*/
 header{
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 61px;
     background-color: #fe5054;
+    z-index: 999;
 }
 header > a.menu{
     display: block;
@@ -41,12 +45,20 @@ article > img{
     display: block;
     width: 100%;
     height: auto;
+    /* 要增加與上方 header 改成 position: fixed後往下一層，而少掉的 header原有高度 */
+    margin-top: 61px;
+    /* 思考：下方其實也要預留才對，因為 footer也是改成 position: fixed，footer會往上浮一層 */
+    /* 但是這種狀況來說，也抓不準是要預留多少，因為不像是 header有寫死的高度 */
 }
 /*///////////////////////////////////////////////////////////////////////*/
 footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
     width: 100%;
     height: auto;
     overflow: hidden;
+    z-index: 999;
 }
 footer > a{
     display: block;
