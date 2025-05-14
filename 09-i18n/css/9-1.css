@@ -36,15 +36,11 @@ header > div{
     overflow: hidden;
 }
 header > div.i18n-zh:lang(zh-tw){
-    /*
-        css...
-    */
+    display: block;
     width: 500px;
 }
-header > div.i18n-cn:lang(cn){
-    /*
-        css...
-    */
+header > div.i18n-en:lang(en){
+    display: block;
     width: 80%;
 }
 
