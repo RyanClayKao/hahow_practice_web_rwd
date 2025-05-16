@@ -67,12 +67,13 @@ footer > a{
     overflow: hidden;
     float: left;
     background-color: #fe5054;
-    /*
-        css...
-    */
+    
+    background-image: url("../images/icon-mid.png");
     /*原始圖片是 80x640 尺寸*/
+    background-size: 40px auto;
+    background-repeat: no-repeat;
 }
-.btn1{ /*css...*/}
-.btn2{ /*css...*/}
-.btn3{ /*css...*/}
-.btn4{ /*css...*/}
+.btn1{ background-position: center 20px}
+.btn2{ background-position: center -60px}
+.btn3{ background-position: center -140px}
+.btn4{ background-position: center -220px}
