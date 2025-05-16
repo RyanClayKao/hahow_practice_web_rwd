@@ -30,7 +30,7 @@ html,body{
 /* 使用 hover 觸發動畫*/
 #app:hover{
 	background-color: red;
-	transform: scale(1.5);
+	transform: scale(1.5) rotate(360deg);
 }
 
 #app > img{
