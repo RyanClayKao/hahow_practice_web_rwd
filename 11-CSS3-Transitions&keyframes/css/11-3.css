@@ -16,6 +16,16 @@ html,body{
 /*
     keyframes css...
 */
+@keyframes saclein {
+    from {
+        transform: scale(0.1);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
 /*--------------------------------------------------------------*/
 #app{
 	width: 340px;
@@ -27,6 +37,7 @@ html,body{
     /*
         animation css...
     */
+    animation: saclein 0.3s;
 }
 #app > img{
     width: 100%;
