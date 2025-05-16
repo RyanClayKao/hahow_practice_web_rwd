@@ -23,16 +23,14 @@ html,body{
 
 	/* 想要使用 CSS3 動畫功能 */	
 	/* 先對 div 宣告 transition */
-	/*
-		css ...
-	*/	
+	/* transition: background-color 0.5s, transform 0.3s; */
+	transition: all 0.3s;
 }
 
 /* 使用 hover 觸發動畫*/
 #app:hover{
-	/*
-		css ...
-	*/	
+	background-color: red;
+	transform: scale(1.5);
 }
 
 #app > img{
