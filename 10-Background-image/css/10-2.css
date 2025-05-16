@@ -19,9 +19,8 @@ header{
 	height:50%;
 	background-image:url("../images/banner.jpg");
 	
-	/*
-		css ...
-	*/
+	background-size: cover;
+	background-position: 50% top;
 }
 header > h1{	
     text-indent: -9999px;
