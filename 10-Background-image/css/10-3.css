@@ -17,9 +17,11 @@ html,body{
 header{
 	width:100%;
 	height:auto;
-	/*
-		css ...
-	*/
+	padding-top: 59.7%;
+	background-image: url('../images/banner.jpg');	
+	/* background-position: center; */
+	background-size: 100% auto;
+	
 	
 }
 header > h1{	
