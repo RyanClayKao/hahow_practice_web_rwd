@@ -34,14 +34,10 @@ header > div{
     overflow: hidden;
 }
 header > div:lang(zh-tw){
-    /*
-        css...
-    */
+    width: 500px;
 }
-header > div:lang(cn){
-    /*
-        css...
-    */
+header > div:lang(en){
+    width: 80%;
 }
 header > div > h1{
     color: #fff;
