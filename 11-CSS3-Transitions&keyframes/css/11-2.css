@@ -27,9 +27,7 @@ html,body{
 	transition: all 0.3s ease-out;
 }
 #app:hover{
-    /*
-        css...
-    */
+    border-radius: 50%;
 }
 
 #app > img{
