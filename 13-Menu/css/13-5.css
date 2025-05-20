@@ -27,7 +27,7 @@ header{
     background-color: #fe5054;
     z-index: 999;
 }
-header > a.menuopem{
+header > a.menuopen{
     display: block;
     width: 61px;
     height: 61px;
@@ -87,14 +87,13 @@ footer > a > img{
     border:3px solid #fe5054;
     
     transition: all .3s;
-    /*
-        css ...
-    */
+    
+    position: fixed;
+    top: 0;
+    left: -300px;
 }
 #menu.open{
-    /*
-        css ...
-    */
+    left: 0;
 }
 /*---------------------------------------------------------------------*/
 #menu > div{
@@ -140,18 +139,16 @@ a#close_btn{
 
 @media screen and (max-width:800px) {
     #app{
-        /*
-            css ...
-        */
+        width: 100%;
     }
     footer{
-        /*
-            css ...
-        */
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
     }
     #menu{
-        /*
-            css ...
-        */
+        width: 100%;
+        left: -100%;
     }
 }
