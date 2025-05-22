@@ -12,22 +12,31 @@ html,body{
 /*---------------------------------------------------------------------*/
 
 #orientation{
-    /*
-        css ...
-    */
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    background-color: #fe5054;
+    background-image: url('../images/moblie.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    
+    z-index: 9999;
 }
 
 /*orientation: portrait   直式*/
 @media screen and  (orientation:portrait) {
-    /*
-        css ...
-    */
+    #orientation {
+        display: none;
+    }
 }
 /*orientation: landscape  橫式*/
 @media screen and  (orientation:landscape) {
-    /*
-        css ...
-    */
+    #orientation {
+        display: block;
+    }
 }
 /*---------------------------------------------------------------------*/
 
