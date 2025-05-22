@@ -22,6 +22,8 @@ html,body{
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 20% auto;
+
+    display: none;
 }
 /*---------------------------------------------------------------------*/
 #app{
