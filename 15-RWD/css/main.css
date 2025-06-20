@@ -119,3 +119,72 @@ article > div > h1 {
 .icon-arrow_right > span:last-child {
     transform: rotate(45deg) translate(6px, -10px);
 }
+
+aside {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: #27212c;
+}
+
+aside > div {
+    width: 1024px;
+    height: 243px;
+    margin: 0 auto;    
+}
+
+aside > div > h3 {
+    display: block;
+    width: 77%;
+    height: 244px;
+    float: left;
+    color: #9685a4;
+    line-height: 244px;
+}
+
+aside > div > a {
+    display: block;
+    width: 23%;
+    height: 244px;
+    float: left;
+    background-color: #bc3183;
+    background-image: url("../images/rightbtn.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+main {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: #5b0fa1;
+}
+
+main > div {
+    width: 1024px;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+main > div > div {
+    width: 33.33%;
+    height: 294px;
+    float: left;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.box1 {
+    background-image: url("../images/rightbtn2.jpg");
+    background-size: 20px 31px;
+}
+
+.box2 {
+    background-image: url("../images/r1.jpg");
+}
+
+.box3 {
+    background-image: url("../images/r2.jpg");
+}
