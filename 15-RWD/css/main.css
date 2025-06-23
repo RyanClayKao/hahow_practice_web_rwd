@@ -230,3 +230,61 @@ div.leftbox > h3 {
     color: #008ca5;
     margin-bottom: 33px;
 }
+
+
+@media screen and (max-width: 1024px) {
+    header > nav,
+    article > div,
+    aside > div,
+    main > div,
+    footer > div {
+        width: 100%;
+    }
+
+    header > nav {
+        padding-left: 53px;
+    }
+
+    article {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    article > div {
+        position: static;
+        top: 0%;    
+        left: 0%;
+        /* width: 740px; */
+        /* height: 275px; */
+        margin-top: 0px;
+        margin-left: 0px;
+        height: auto;
+
+        padding-left: 8%;
+        padding-right: 21%;
+
+        /* background-image: url("../images/rightbtn.jpg");
+        background-repeat: no-repeat;
+        background-size: 19px 30px;
+        background-position: right bottom; */
+    }
+
+    aside > div > h3 {
+        padding-left: 8%;
+        padding-right: 8%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+
+}
+
+@media screen and (max-width: 640px) {
+    
+}
+
+@media screen and (max-width: 320px) {
+    
+}
