@@ -23,6 +23,10 @@ header {
     background-color: #373c3f;
 }
 
+#menubtn {
+    display: none;
+}
+
 header > nav {
     width: 1024px;
     height: 97px;
@@ -282,7 +286,43 @@ div.leftbox > h3 {
 }
 
 @media screen and (max-width: 640px) {
-    
+    #menubtn {
+        display: block;
+        width: 82px;
+        height: 79px;
+        background-image: url("../images/menu.jpg");
+        float: right;
+    }
+
+    header > nav {
+        transition: height 0.3s;
+        height: 74px;
+        overflow: hidden;
+    }
+
+    header > nav.open {
+        height: 444px;
+    }
+
+    header > nav > h1 {
+        line-height: 74px;
+    }
+
+    header > nav > div {
+        padding-left: 0px;
+        float: none;
+        clear: both;
+        width: 100%;
+        height: auto;
+    }
+
+    header > nav > div > a {
+        line-height: 74px;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 320px) {
