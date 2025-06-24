@@ -323,6 +323,82 @@ div.leftbox > h3 {
         overflow: hidden;
         text-align: center;
     }
+
+    article {
+        height: 348px;
+    }
+
+    article > div > h1 {
+        font-size: 40px;
+        color: #fff;
+    }
+
+    .cta-link > p {
+        padding-top: 30px;
+        font-size: 18px;
+    }
+    
+
+    aside > div {
+        height: 150px;        
+    }
+
+    aside > div > h3 {
+        height: 100%;
+        line-height: 150px;
+    }
+
+    aside > div > a {
+        height: 100%;
+    }
+
+    main > div > div {
+        /* 
+            之前 10-3的部分有學過這個概念，讓它等比例縮放 
+            就是用想要呈現的 (圖片高度 / 裝置高度) * 100 %
+            老師這裡的
+                * 圖片在設計稿裡面的高度是 550px
+                * 裝置高度是抓 iPhone 6 Plus的高度 736px
+            所以算出來大約是 74.7%，直接取 75%            
+        */
+        padding-top: 75%;
+        width: 100%;
+        height: auto;
+        float: none;
+    }
+
+    footer > div {
+        padding: 12%;
+    }
+
+    footer > div > div {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    footer > div > div.leftbox {
+        float: left;
+    }
+
+    footer > div > div.rightbox {
+        float: right;
+        padding-top: 0px;
+    }
+
+    footer > div > div > p {
+        font-size: 18px;
+        color: #515151;
+        padding-bottom: 72px;
+        line-height: 38px;
+    }
+
+    div.leftbox > h3 {
+        font-size: 24px;
+        color: #008ca5;
+        margin-bottom: 57px;
+    }
+
 }
 
 @media screen and (max-width: 320px) {

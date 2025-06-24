@@ -4,6 +4,36 @@
   * 內部是用 padding來推左右的內縮距離
 * 文字段落之間的間距是用 padding-top來推上方的距離
 * 當文字只有簡短的一行時，要測量它的高度，使用 line-height來撐開高度
+* 在外層的標籤設定能夠自動撐開，而在內層才去寫死高度
+  * ```css
+      /* 外層設定能夠自動撐開 */
+      header {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+      }
+
+      /* 內層寫死高度，往外撐 */
+      header > nav {
+        height: 74px;        
+      }
+
+      header > nav > h1 {
+        float: left;
+      }
+
+      header > nav > div {        
+        height: auto;
+        float: left;
+        padding-left: 20px;
+      }
+
+      header > nav > div > a {
+        float: left;
+        /* 讓高度能夠完全貼合導覽列 */
+        line-height: 74px;
+      }
+    ```
 
 ### background-image排版設定
 * 使用 bacground-size 設定寬度、高度
@@ -22,3 +52,4 @@
       * 設定同一個 html標籤使用 backgroung-image，載入一次圖片就好
       * 在裡面要設定 icon的元素設定不同的 class
       * 針對各自要顯示的 icon去調整 background-position，來定位到圖片中正確的icon上面
+
